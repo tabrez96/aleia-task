@@ -1,0 +1,62 @@
+@import '../../assets/scss/breakpoints.scss';
+
+.aleia-tile {
+  position: relative;
+  cursor: pointer;
+
+  &-favorite-icon {
+    color: #F6F6F6;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+  &-image {
+    width: 100%;
+
+    @include for-desktop {
+      filter: gray;
+      /* IE6-9 */
+      -webkit-filter: grayscale(1);
+      /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: grayscale(1);
+      /* Microsoft Edge and Firefox 35+ */
+    }
+
+    @include for-tablet {
+      filter: gray;
+      /* IE6-9 */
+      -webkit-filter: grayscale(1);
+      /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: grayscale(1);
+      /* Microsoft Edge and Firefox 35+ */
+    }
+
+    &:hover {
+      filter: none;
+      /* IE6-9 */
+      -webkit-filter: none;
+      /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: none
+      /* Microsoft Edge and Firefox 35+ */
+    }
+  }
+
+  &-price {
+    color: #F6F6F6;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    z-index: 1;
+  }
+
+  &-address {
+    color: #F6F6F6;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    z-index: 1;
+  }
+}

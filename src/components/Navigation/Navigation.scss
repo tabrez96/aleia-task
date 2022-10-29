@@ -1,0 +1,54 @@
+.aleia-navigation {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  &-main-content {
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+
+    .aleia-button {
+      border-bottom: 2px solid #fff;
+
+      &:hover {
+        border-bottom: 2px solid #000000;
+      }
+    }
+  }
+
+  &-logo {
+    height: 32px;
+    margin-right: 20px;
+  }
+
+  &-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    top: 72px;
+    left: 0px;
+    padding: 20px;
+
+    &-content {
+      margin-top: 120px;
+      align-items: flex-start;
+      height: calc(100% - 240px);
+
+      &-buttons {
+        gap: 27px;
+      }
+    }
+
+    .aleia-button {
+      width: max-content;
+      border-bottom: 2px solid #fff;
+
+      &:hover {
+        border-bottom: 2px solid #000000;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import '../../assets/scss/breakpoints.scss';
+
+.aleia-text {
+  &-size {
+    // &-small {
+    //   font-size: 16px;
+    // }
+
+    &-medium {
+      @include for-desktop {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      @include for-tablet {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      @include for-mobile {
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+
+    // &-large {
+    //   @include for-desktop {
+    //     font-size: 24px;
+    //     line-height: 36px;
+    //   }
+
+
+    //   @include for-tablet {
+    //     font-size: 20px;
+    //     line-height: 27px;
+    //   }
+
+    //   @include for-mobile {
+    //     font-size: 20px;
+    //     line-height: 27px;
+    //   }
+    // }
+
+    &-x-large {
+      @include for-desktop {
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+
+      @include for-tablet {
+        font-size: 30px;
+        line-height: 45px;
+      }
+
+      @include for-mobile {
+        font-size: 26px;
+        line-height: 39px;
+      }
+    }
+  }
+}

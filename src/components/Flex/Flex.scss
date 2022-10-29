@@ -1,0 +1,19 @@
+.aleia-flex {
+  display: flex;
+
+  &-direction {
+    &-row {
+      flex-direction: row;
+    }
+
+    &-column {
+      flex-direction: column;
+    }
+  }
+
+  &-justify {
+    &-space-between {
+      justify-content: space-between;
+    }
+  }
+}

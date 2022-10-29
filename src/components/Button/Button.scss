@@ -1,0 +1,35 @@
+.aleia-button {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  align-items: center;
+
+  &-size {
+    &-small {}
+
+    &-medium {}
+
+    &-large {
+      // width: 310px;
+      height: 66px;
+    }
+  }
+
+  &-variant {
+    &-text {
+      border: none;
+      background: none;
+    }
+
+    &-contained {
+      padding: 16px 12px;
+      border: 1.5px solid #0A0A0A;
+
+      &:hover {
+        border: 1.5px solid #0A0A0A;
+        background: #0A0A0A;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import './assets/scss/reset.scss';
+@import './assets/scss/breakpoints.scss';
+
+.app {
+  @include for-desktop {
+    padding: 52px;
+  }
+
+  @include for-tablet {
+    padding: 36px;
+  }
+
+  @include for-mobile {
+    padding: 20px;
+  }
+}
+
+.text-bold {
+  font-weight: 500;
+
+  &-600 {
+    font-weight: 600;
+  }
+
+  &-700 {
+    font-weight: 700;
+  }
+}
