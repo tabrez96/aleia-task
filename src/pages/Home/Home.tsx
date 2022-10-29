@@ -38,7 +38,7 @@ const Home = () => {
     ];
 
     return columns;
-  }, [properties]);
+  }, [properties, breakpoint]);
 
   useEffect(() => {
     dispatch(loadProperties());
